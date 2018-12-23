@@ -9,7 +9,7 @@ Deploy a sample project which have a nodejs microservice and mongodb for databas
 4.	start the minikube:
 > minikube start
 5.	clone the sample project:
-> git clone http://cloud.nucore.in:8082/git/charan.raj/nucore.git
+> git clone https://github.com/sushanthsanil/kubernet_sample.git
 6.	change the project directory:
 > cd project
 7.	Run the kubernet through skaffold command line tool:
