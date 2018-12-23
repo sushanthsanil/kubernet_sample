@@ -1,0 +1,15 @@
+apiVersion: skaffold/v1alpha5
+kind: Config
+
+build:
+  local: {}
+  artifacts:
+  - image: node-micro
+    context: .
+    docker:
+      dockerfile: microservices/back-end/node-micro/Dockerfile
+  
+deploy:
+  kubectl:
+    manifests:
+    - ./NuCoreProject/k8s-specifications/*

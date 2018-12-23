@@ -1,0 +1,14 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: node-micro
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: node-micro
+    spec:
+      containers:
+      - image: node-micro
+        name: node-micro
